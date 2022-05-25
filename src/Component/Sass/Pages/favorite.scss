@@ -1,0 +1,287 @@
+@import '../Sass-utils/color.scss';
+
+.favorite{
+    width: 100%;
+    overflow: auto;
+    .favorite-inner{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #F8F8F8 0%, #EEEEEE 100%);
+        .tabbing {
+            ul{
+                display: flex;
+                border-bottom: none;
+                width: 100%;
+                justify-content: space-between;
+                li{
+                    button {
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $greyColor;
+                        &.active{
+                        color: $headingColor;
+                        background: none;     
+                        border-bottom: 2px solid $primaryColor;   
+                        }
+                    }
+                }
+            }   
+            .favorite-white{
+                width: 100%;
+                background: #fff;
+                border-radius: 24px 24px 0 0;
+                height: 100%;
+                padding: 10px 0;
+                margin: -10px 0 0 0;
+                h4{
+                    font-family: var(--primaryFont);
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: $headingColor;
+                    margin: 0 40px;
+                }
+                .card1{
+                    border: 1px solid #eee;
+                    padding: 20px;
+                    border-radius: 14px;
+                    margin: 20px 0 0;
+                    .card-inner{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .img{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+
+                            img{
+                                width: 50px;
+                                height: 50px;
+                                object-fit: cover;
+                                object-position: center;
+                                border-radius: 10px;
+                            }
+                            p{
+                                padding: 0 20px;
+                                margin: 0;
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                        }
+                    }    
+                    .fullimage {
+                        display: flex;
+                        width: 100%;
+                        margin: 20px 0 0 0;
+                        img{
+                            width: 100%;
+                            border-radius: 14px;
+                            height: 190px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    .like{
+                        width: 100%;
+                        display: flex;
+                        margin: 10px 0 0;
+                        justify-content: space-between;
+                        p{
+                            margin: 0;
+                            padding: 0;
+                            span{
+                                margin: 0 10px 0 0;
+                                svg{
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                        .heart{
+                            display: flex;
+                            .love{
+                                svg{
+                                    width: 20px;
+                                    height: 20px;
+                                    margin: 0 3px;
+                                }
+                            }    
+                        }
+                    }
+                }
+            }       
+            .img-favorite {
+                width: 100%;
+                margin: 10px 0;
+                .fav1{
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 10px;
+                    -webkit-column-gap: 10px;
+                    -moz-column-gap: 10px;
+                    -o-column-gap: 10px;
+                    row-gap: 10px;
+                    -webkit-row-gap: 10px;
+                    -moz-row-gap: 10px;
+                    -o-row-gap: 10px;
+                    margin: 10px 0;
+                    justify-content: center;
+                    &.row-reverse{
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+                    .fav-big {
+                        max-width: 155px;
+                        max-height: 193px;
+                        position: relative;
+                        .dotts{
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            content: "";
+                            z-index: 3;
+                        }
+                        .text {
+                            position: absolute;
+                            bottom: 0px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100%;
+                            z-index: 3;
+                            padding: 0 10px;
+                            margin: 10px 0;
+                            p{
+                                color: $white;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                        .background-gradient{
+                            background: linear-gradient(189.09deg, rgba(0, 0, 0, 0) 6.9%, #3F4156 143.13%);
+                            z-index: 2;
+                            position: absolute;
+                            top: 130px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            mix-blend-mode: darken;
+                            border-radius: 0 0 14px 14px;
+                        }
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: rgba(63, 65, 66, 0.2);
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            border-radius: 14px;
+                            z-index: 2;
+                        }
+                        img{
+                            object-fit: cover;
+                            height: 189px;
+                            object-position: top;
+                            border-radius: 14px;
+                        }
+                    }
+                    .d-flexx {
+                        column-gap: 10px;
+                        -webkit-column-gap: 10px;
+                        -moz-column-gap: 10px;
+                        -o-column-gap: 10px;
+                        row-gap: 10px;
+                        -webkit-row-gap: 10px;
+                        -moz-row-gap: 10px;
+                        -o-row-gap: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        .fav-small {
+                            max-width: 270px;
+                            max-height: 90px;
+                            row-gap: 10px;
+                            -webkit-row-gap: 10px;
+                            -moz-row-gap: 10px;
+                            -o-row-gap: 10px;
+                            column-gap: 10px;
+                            -webkit-column-gap: 10px;
+                            -moz-column-gap: 10px;
+                            -o-column-gap: 10px;
+                            position: relative;
+                            .dotts{
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                                content: "";
+                                z-index: 3;
+                            }
+                            .text {
+                                position: absolute;
+                                bottom: 0px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 100%;
+                                z-index: 3;
+                                padding: 0 10px;
+                                margin: 10px 0;
+                                p{
+                                    color: $white;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                            }    
+                            img{
+                                object-fit: cover;
+                                object-position: top;
+                                border-radius: 14px;
+                                width: 100%;
+                                height: 90px;
+                            }
+                            .background-gradient{
+                                background: linear-gradient(189.09deg, rgba(0, 0, 0, 0) 6.9%, #3F4156 143.13%);
+                                z-index: 2;
+                                position: absolute;
+                                top: 50px;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                mix-blend-mode: darken;
+                                border-radius: 0 0 14px 14px;
+                            }
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: rgba(63, 65, 66, 0.2);
+                                top: 0;
+                                bottom: 0;
+                                right: 0;
+                                left: 0;
+                                border-radius: 14px;
+                                z-index: 2;
+                            }
+                        }
+                    }    
+                }    
+            }
+        }    
+    }
+    .blue-background {
+        width: 100%;
+        height: 375px;
+        background: #25A5FA;
+        opacity: 0.10;
+        filter: blur(104px);
+        position: absolute;
+        z-index: -1;
+        transition: 0.3s;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }    
+}

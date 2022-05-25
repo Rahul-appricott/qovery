@@ -1,0 +1,88 @@
+@import '../Sass-utils/color.scss';
+
+.privacy{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #ECF7FF 0%, #F8F8F8 46.88%, #EEEEEE 100%);
+    overflow-y: scroll;
+    .privacy-h{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .privacy-inner{
+        width: 100%;
+        .cover-block{
+            width: 100%;
+            display: flex;
+            .block-div {
+                position: relative;
+                margin: 30px 0 0 0;
+                display: flex;
+                flex: 0 0 50%;
+                .blocked-user {
+                    position: absolute;
+                    top: -18px;
+                    left: 8px;
+                    right: 0;
+                    bottom: 0;
+                    img{
+                        max-width: 100px
+                    }
+                }
+                .text{
+                    position: absolute;
+                    right: 20px;
+                    z-index: 3;
+                    top: 14px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    p {
+                        color: $white;
+                        font-size: 12px;
+                        text-align: end;
+                        margin: 0 0 5px;
+                        padding: 0;
+                        span{
+                            font-size: 12px;
+                            text-align: right;
+                            display: block;
+                        }
+                    }
+                    button{
+                        background: #fff;
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: $primaryColor;
+                        padding: 3px;       
+                    }
+                }    
+            }
+        }   
+        .active-status {
+            width: 100%;
+            display: flex;
+            margin: 20px 0;
+            .show-activity {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .form-switch{
+                .form-check-input {
+                    width: 45px;
+                    height: 24px;
+                    &:checked {
+                        background-color: $primaryColor;
+                        border-color: $primaryColor;
+                    }
+                }
+            }
+        } 
+        .profile-p{
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}

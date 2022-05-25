@@ -1,0 +1,101 @@
+.GrayShadow{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    opacity: 0.6;    
+}
+.SuccessBox{
+    position: absolute;
+    width: 375px;
+    height: 461px;
+    left: 0px;
+    top: 351px;
+    background: #FFFFFF;
+    border-radius: 32px 32px 0px 0px;
+    .TopBorder{
+        position: absolute;
+        width: 168px;
+        height: 6px;
+        left: 104px;
+        top: 20px;
+        background: #C3C7D4;
+        opacity: 0.2;
+        border-radius: 95px;
+    }
+}
+.ImageSize{
+    position: absolute;
+    width: 214px;
+    height: 150px;
+    left: 80px;
+    top: 400px;
+}
+.SuccessTag{
+    position: absolute;
+    left: 34.4%;
+    right: 34.4%;
+    top: 73%;
+    bottom: 24.14%;
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #3F4156;
+    text-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+.SuccessHistory{
+    position: absolute;
+    width: 251px;
+    height: 44px;
+    left: 62px;
+    top: 650px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #999999;
+}
+.ButtonSet{
+    position: absolute;
+    left: 6.13%;
+    right: 6.13%;
+    top: 88.33%;
+    bottom: 50px;
+    background: #F78000;
+    box-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+    -webkit-backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    .Done{
+        left: 45.33%;
+        right: 42.4%;
+        top: 110.16%;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.nav-link{
+    color: red;
+}
+
+.nav-link a{
+    color: white !important;
+    }

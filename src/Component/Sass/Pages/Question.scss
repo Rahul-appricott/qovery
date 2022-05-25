@@ -1,0 +1,333 @@
+@import '../Sass-utils/color.scss';
+
+.question{
+    // width: 100%;
+    // height: 100vh;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    margin: 0;
+    // background: linear-gradient(180deg, #F8F8F8 0%, #EEEEEE 100%);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #ECF7FF 0%, #F8F8F8 46.88%, #EEEEEE 100%);
+    mix-blend-mode: normal;
+    .top-img{
+        position: absolute;
+        width: 291px;
+        height: 34px;
+        left: 20px;
+        top: 77px;
+        .MainImg {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .main-heading{
+            position: absolute;
+            left: 23.33%;
+            right: -7.93%;
+            top: 32.1%;
+            bottom: 86.7%;
+            font-family: "Bebas Neue";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #3F4156;
+            text-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+            // -webkit-backdrop-filter: blur(20px);
+            // backdrop-filter: blur(20px);
+        }
+    }
+    .progressBar {
+        position: absolute;
+        max-width: 335px;
+        width: 100%;
+        height: 10px;
+        left: 0;
+        top: 140px;
+        background: #25A5FA;
+        opacity: 0.8;
+        border-radius: 92px;
+        margin: 0 auto;
+        right: 0;
+        .progress {
+            height: 0.7rem;
+        }
+    }
+    .box1{
+        position: absolute;
+        width: 285px;
+        height: 478px;
+        left: 0;
+        top: 189px;
+        background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+        opacity: 0.8;
+        box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+        -webkit-backdrop-filter: blur(22.7168px);
+        backdrop-filter: blur(22.7168px);
+        border-radius: 10px;
+        right: 0;
+        margin: 0 auto;
+        }
+    .box2{
+        position: absolute;
+        width: 317px;
+        height: 478px;
+        left: 0;
+        top: 178px;
+        background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+        opacity: 0.8;
+        box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+        -webkit-backdrop-filter: blur(22.7168px);
+        backdrop-filter: blur(22.7168px);
+        border-radius: 10px;
+        right: 0;
+        margin: 0 auto;
+    }
+    .box3{
+        position: absolute;
+        width: 100%;
+        max-width: 335px;
+        left: 0;
+        top: 168px;
+        background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+        box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+        border-radius: 10px;
+        right: 0;
+        text-align: center;
+        margin: 0px auto;
+        height: 60%;
+        .main-ques{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            margin: 20px 21px;
+            text-align: left;
+        }
+        .box4{
+            width: 295px;
+            height: 67px;
+            left: 20px;
+            top: 80px;
+            background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+            box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 10px;
+            margin: 20px auto;
+            .Option1{
+                left: 4.67%;
+                top: 35.22%;
+                bottom: 62.81%;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3F4156;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                left: 250px;
+                top: 20px;
+                background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+                border: 1px solid #E9E9E9;
+                box-sizing: border-box;
+                box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+                backdrop-filter: blur(22.7168px);
+                border-radius: 2px;
+            }
+            .button-save{
+                margin: 30px 0;
+            }
+        }
+        .box5{
+            position: absolute;
+            width: 295px;
+            height: 67px;
+            left: 20px;
+            top: 160px;
+            background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+            box-shadow: 0px 28.7746px 62.0925px rgba(19, 23, 66, 0.06);
+            backdrop-filter: blur(22.7168px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 0 10px;
+            .Option2{
+                position: absolute;
+                left: 5.08%;
+                right: 24.41%;
+                top: 38.81%;
+                bottom: 37.31%;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3F4156;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                left: 250px;
+                top: 20px;
+                background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+                border: 1px solid #E9E9E9;
+                box-sizing: border-box;
+                box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+                backdrop-filter: blur(22.7168px);
+                border-radius: 2px;
+            }
+        }
+        .box6{
+            position: absolute;
+            width: 295px;
+            height: 67px;
+            left: 20px;
+            top: 240px;
+            background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+            box-shadow: 0px 28.7746px 62.0925px rgba(19, 23, 66, 0.06);
+            backdrop-filter: blur(22.7168px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 0 10px;
+            .Option3{
+                position: absolute;
+                left: 4.67%;                
+                bottom: 41.87%;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3F4156;
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                left: 250px;
+                top: 20px;
+                background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+                border: 1px solid #E9E9E9;
+                box-sizing: border-box;
+                box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+                backdrop-filter: blur(22.7168px);
+                border-radius: 2px;
+            }
+        }
+        .box7{
+            position: absolute;
+            width: 295px;
+            height: 67px;
+            left: 20px;
+            top: 320px;
+            background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+            box-shadow: 0px 28.7746px 62.0925px rgba(19, 23, 66, 0.06);
+            backdrop-filter: blur(22.7168px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 0 10px;
+            .Option4{
+                position: absolute;
+                left: 4.67%;                
+                bottom: 31.4%;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #3F4156;
+
+            }
+            input[type="checkbox"] {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                left: 250px;
+                top: 20px;
+                background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+                border: 1px solid #E9E9E9;
+                box-sizing: border-box;
+                box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+                backdrop-filter: blur(22.7168px);
+                border-radius: 2px;
+            }
+        }
+        .box8{
+            position: absolute;
+            width: 295px;
+            height: 339px;
+            left: 20px;
+            top: 100px;
+            background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+            box-shadow: 0px 28.7746px 62.0925px rgb(19 23 66 / 6%);
+            -webkit-backdrop-filter: blur(22.7168px);
+            backdrop-filter: blur(22.7168px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+    .foot{
+        position: absolute;
+        width: 228px;
+        height: 200px;
+        left: -87px;
+        top: 530px;
+        background: #25A5FA;
+        opacity: 0.3;
+        filter: blur(234px);
+    }
+}
+
+.input-group>.form-control, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    min-height: 340px;
+}
+
+.ButtonSet1 {
+    width: 100%;
+    background: #f78000;
+    margin: 5px 80px;
+    position: absolute;
+    left: 0;
+    top: 124.33%;
+    text-align: center;
+    max-width: 45%;
+    color: $white !important;
+}
+
+.listingAppliedQuestion{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

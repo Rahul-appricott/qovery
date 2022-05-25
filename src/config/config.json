@@ -1,0 +1,8 @@
+{
+    "API_URL": "https://selector-backend.appricott.in/upscald/api/v1/",
+    "DOCS_URL": "https://selector-backend.appricott.in/",
+    "baseURL": "http://127.0.0.1:3009/",
+    "FACEBOOK": "Facebook",
+    "GOOGLE": "Google",
+    "TWITTER": "Twitter"
+}

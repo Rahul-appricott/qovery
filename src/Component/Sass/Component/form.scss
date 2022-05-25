@@ -1,0 +1,82 @@
+@import '../Base/typography.scss';
+@import '../Sass-utils/color.scss';
+
+.form{
+    width: 100%;
+    .input-field{
+        width: 100%;
+        position: relative;
+        .form-vanity {
+            width: 50%;
+            margin: 0 50% 0;
+            border-radius: 0 14px 14px 0 !important;
+        }
+        span{
+            width: 50%;
+            position: absolute;
+            content: "";
+            top: 34%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #eee;
+            border-radius: 9px 0 0 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: $greyColor;
+        }
+    }
+    .verify-address{
+        a{
+
+            text-decoration: none;
+            p{
+            color: red !important;
+            font-size: 12px;
+            }
+        }    
+    }
+    label{
+        color: $headingColor;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .form-control {
+        border: 1px solid $greyColor;
+        height: 58px;
+        border-radius: 10px;
+        color: $greyColor;
+        font-size: 14px;
+        &::placeholder{
+            color: $greyColor;
+        }
+    }
+    .form-select {
+        border: 1px solid $greyColor;
+        height: 58px;
+        border-radius: 10px;
+        color: $greyColor;
+        font-size: 14px;
+        &::placeholder{
+            color: $greyColor;
+        }
+    }
+    .forgot{
+        color: $headingColor;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2px;
+        margin: 0;
+    }
+    .signin{
+        width: 100%;
+        background: $primaryColor;
+        border: none;
+        height: 58px;
+        box-shadow: 0px 33px 100px rgba($primaryColor, 0.06);
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,107 @@
+@import'../Base/typography.scss'; 
+@import'../Sass-utils/color.scss';
+
+.analytics{
+    width: 100%;
+    .gradient_one{        
+        background: linear-gradient(321.34deg, #FFD8AD -37.94%, #F78000 113.75%);
+        border-radius: 10px;
+        padding: 25px 22px;
+        color: white;
+        text-align: center;
+        p{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 13px;
+            line-height: 16px;
+        }
+        h4{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .gradient_two{        
+        background: linear-gradient(321.34deg, #C7E9FF -37.94%, #25A5FA 113.75%);
+        border-radius: 10px;
+        padding: 27px 22px;
+        color: white;
+        text-align: center;
+        p{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 13px;
+            line-height: 16px;
+        }
+        h4{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .line_chart, .column_chart {
+        box-shadow: 0 0 5px lightgrey;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .premium_section{
+        display: flex;
+        margin-top: 20px;
+        padding: 45px;
+        background: linear-gradient(321.34deg, #FFE1A8 -37.94%, #F78000 113.75%);
+        border-radius: 10px;
+        .star-icon {
+            background: white;
+            padding: 24px 18px;
+            border-radius: 6px;
+            margin-right: 19px;
+        }
+        .fav_right p{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            margin: 0;
+            line-height: 35px;
+        }
+
+        .fav_right p{
+            font-family: 'Work Sans';
+            font-style: normal;
+            margin: 0;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+        }        
+    }
+    .premium_btn{
+        button{
+            width: 200px;
+            height: 48px;
+            background: #FFFFFF;
+            border-radius: 4px;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            border: none;
+            margin: -25px auto 20px;
+            // position: relative;
+            box-shadow: 0 0 3px #80808087;
+            color: #F78000;
+    
+        }
+    }
+}

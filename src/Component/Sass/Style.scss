@@ -1,0 +1,99 @@
+/* Component */
+@import './Component/button.scss';
+@import './Component/form.scss';
+@import './Component/Accordion.scss';
+
+/* Layout */
+@import './Layout/footer.scss';
+@import './Layout/sidebar.scss';
+
+/* Sass-Utils */
+@import './Sass-utils/color.scss';
+@import './Sass-utils/mixin.scss';
+
+/* Sass-Utils */
+@import './Base/typography.scss';
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+/* Social-Media Icons*/
+
+.socialIcons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    button{
+      display: flex;
+      svg {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        border-radius: 10px;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin: 10px 10px;
+    }
+    }
+  }
+
+//   .datingQuestions{
+//       display: none;
+//   }
+//   .datingQuestions2{
+//     display: none;
+// }
+
+// .datingQuestions3{
+//     display: none;
+// }
+// .datingQuestions4{
+//     display: none;
+// }
+// .datingQuestions5{
+//     display: none;
+// }
+// .datingQuestions6{
+//     display: none;
+// }
+// .datingQuestions7{
+//     display: none;
+// }
+// .datingQuestions8{
+//     display: none;
+// }
+// .datingQuestions9{
+//     display: none;
+// }
+// .datingQuestions10{
+//     display: none;
+// }
+
+  .button-save {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    button{
+        background: #3F4156;
+        color: #fff;
+        width: 100%;
+        margin: 0 20px;
+    }
+    
+}

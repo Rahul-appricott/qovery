@@ -1,0 +1,269 @@
+@import '../Sass-utils/color.scss';
+
+.background-b{
+    background: linear-gradient(191.33deg, #F5FBFF 3.59%, #F8F8F8 52.83%, #EEEEEE 101.49%);
+}
+.Info-User{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    // background: linear-gradient(180deg, #ECF7FF 0%, #F8F8F8 46.88%, #EEEEEE 100%);
+   
+    // .bg-Section{
+    //     width: 100%;
+    //     height: 375px;
+    //     background: #25a5fa;
+    //     opacity: 0.05;
+    //     filter: blur(164px);
+    //     position: absolute;
+    //     z-index: -1;
+    //     transition: 0.3s;
+    //     content: '';       
+    // }
+    &.upload-v{
+        flex-direction: column;
+        .error-badge{
+            white-space: normal;
+            display: flex;
+            justify-content: flex-start;
+            line-height: 20px;
+        }
+    }
+
+    .progress-bb{
+        width: 100%;
+        float: left;
+        margin: 30px 0 20px;
+        .progress {
+            margin: 20px;
+            height: 7px;
+            .progress-bar{
+                background: $blueColor;
+            }
+        }
+    }
+
+    .progress-b{
+        margin-top: 40px;
+        .progress {
+            height: 0.5rem;
+        }
+    }
+    .basicInfo{
+        width: 100%;
+        display: flex;
+        .svg-i {
+            margin-top: 15px;
+        }
+    }    
+    h4 {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #3F4156;
+        text-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+        display: flex;
+        margin-top: 15px;
+        backdrop-filter: none;
+    }
+    .video-upload {
+        background: #FFFFFF;
+        border-radius: 6px;
+        .upload-video{
+            position: relative;
+            .file-video{
+                position: absolute;
+                width: 268px;
+                height: 251px;
+                opacity: 0;
+            }
+        }
+    }
+    p {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #3F4156;
+        &.lable-text{
+            margin: 0 0 10px;
+        }
+    }
+    p1 {
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #666666;
+        display: flex;
+    }
+    .input-t{
+        margin-bottom: 20px;
+        height: 55px;
+        .css-1s2u09g-control {
+            border-color: hsl(0, 0%, 80%);
+            min-height: 55px;
+            /* border: none; */
+        }
+    } 
+    .form-component{
+        .checkout {
+            backdrop-filter: none;
+        }
+    }   
+}
+
+.Descriptions {
+    margin-left: 20px;
+    max-width: 319px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #666666;    
+}
+.Example1 {
+    display: flex;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #3F4156;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.boxes {
+    height: 251px;
+    background: rgba(37, 165, 250, 0.03);
+    border: 1px dashed #25A5FA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+.upload1 {
+    display: flex;
+    justify-content: center;
+}
+.UploadTitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #3F4156;
+    display: flex;
+    margin: 34px 26px 24px 30px;
+    text-decoration: auto;
+    justify-content: center;
+}
+.ButtonSet3 {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    color: #25A5FA;
+    justify-content: center;
+    width: 100%;
+}
+.boxes1 {
+    // height: 66px;
+    // background: #FFFFFF;
+    // border: 1px solid rgba(175, 169, 169, 0.1);
+    // box-sizing: border-box;
+    // box-shadow: 0px 0px 25px rgb(0 0 0 / 2%);
+    // border-radius: 10px;
+    // margin: 20px 0 20px 0px;
+    // height: 66px; */
+    background: #FFFFFF;
+    border: 1px solid rgba(175, 169, 169, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 2%);
+    border-radius: 10px;
+    margin: 20px 0 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    .description {
+        display: flex;
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 10px;
+            p{
+                margin: 0;
+            }
+            span{
+                font-size: 14px;
+                color: $greyColor;
+            }
+        }
+        .react-thumbnail-generator {
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+            }    
+        }
+    }
+}
+.videoImage{
+    height: 50px;
+    display: flex;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.VideoTitle {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+    color: #3F4156;
+    display: flex;
+    margin-top: -40px;
+    margin-left: 70px;
+}
+.VideoSize {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 13px;
+    color: #999999;
+    margin-top: -20px;
+    margin-left: 70px;
+}
+.videoDelete {
+    margin-left: 40%;
+    margin-top: -25px;
+}
+.ButtonSet2 {
+    background: $headingColor;
+    box-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+    border-radius: 4px;
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    line-height: 3;
+    text-decoration: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+    backdrop-filter: none;
+}

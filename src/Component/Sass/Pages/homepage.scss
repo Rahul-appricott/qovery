@@ -1,0 +1,533 @@
+@import '../Sass-utils/color.scss';
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -66px 0px;
+    background: linear-gradient(180deg, #F8F8F8 0%, #EEEEEE 100%);
+    .background-shield{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        justify-content: center;
+        .text {
+            width: 100%;
+            position: absolute;
+            top: 0%;
+            padding: 24px;
+            z-index: 2;
+            text-align: center;
+            h4{
+                font-size: 40px;
+                font-weight: 600;
+                margin: 10px 0px;
+                color: $headingColor;
+                margin-bottom: 0;
+            }
+            h6{
+                color: $primaryColor;
+                margin: 0px 0px 10px 0px;
+            }
+            p{
+                color: $headingColor;
+                font-weight: 600;
+            }
+            .apply-scan{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            .social-media {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                a {
+                    margin: 0 10px;
+                }
+            }
+        }
+        
+        .like-status{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 4%;
+            .image {
+                z-index: 9999;
+                margin: 7px 20px
+                ;
+                a{
+                    padding: 15px 0;
+                    z-index: 9999;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin: 2% 0;
+                    border: 1px solid $primaryColor;
+                    padding: 2px;
+                }
+            }
+            .button-like{
+                display: flex;
+                z-index: 9999;
+                position: absolute;
+                top: 2px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                right: 0;
+                background: white;
+                box-shadow: 0px 4px 10px rgb(0 0 0 / 5%);
+                border-radius: 0px 34px 0px 40.5px;
+            }
+        }    
+        .white-background{
+            width: 100%;
+            height: 67vh;
+            background: linear-gradient(115.09deg, rgba(255, 255, 255, 0.48) 4.35%, rgba(255, 255, 255, 0.46) 98.4%);
+            box-shadow: 0px 24.1805px 73.2742px rgba(8, 11, 37, 0.05);
+            position: absolute;
+            bottom: 0;
+            border-radius: 34px 34px 0 0;
+            padding: 0 20px;
+            margin: 0 10px;
+            backdrop-filter: blur(18.3185px);
+        }
+        .button-play{
+            display: flex;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            border: 8px solid $white;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: -32px 0px 0px -30px;
+            right: -10px;
+        }
+        .text-head{
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            height: 70vh;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            .carousell {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 60vh;
+                z-index: 1;
+                img {
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    z-index: 2;
+                }
+                .video{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    position: absolute;
+                    height: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 25%;
+                    z-index: 3;
+                    background: rgba(255,255,255);
+                    max-width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                }
+                .apply-button {
+                    position: absolute;
+                    bottom: 10%;
+                    width: 100%;
+                    max-width: 250px;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    z-index: 3;
+                }
+            }
+            .filter-background{
+                width: 100%;
+                background: $white;
+                height: 50%;
+                position: absolute;
+                left: 0;
+                max-width: 100%;
+                bottom: 0px;
+                z-index: 1;
+                filter: blur(10px);
+                top: 50%;
+            }
+        }
+    }
+}
+
+/* Swipe Data */
+
+.slidee{
+    width: 100%;
+    position: absolute;
+    top: 103%;
+    left: 0;
+    right: 0;
+    bottom: -55px;
+    background-size: cover;
+    z-index: 2;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(15px);
+    // margin-top: 850px;
+    overflow: hidden;
+    transition: 1s all;
+    &.open{
+        // margin-top: 0px;
+        top: 0;
+        overflow: auto;
+        transition: 1s all;
+    }   
+    .arrow {
+        margin: 10px auto 0;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .image-text {
+        width: 100%;
+        position: relative;
+        .text{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 122px;
+            flex-direction: column;
+            color: $white;
+            top: 13px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .slideImage {
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                background: $secondaryColor;
+                width: 100%;
+                height: 150px;
+                left: 0;
+                border-radius: 24px;
+                opacity: 0.75;
+                top: 0px;
+                bottom: 0;
+            }
+            img {
+                width: 100%;
+                height: 150px;
+                border-radius: 24px;
+                margin-top: 0;
+                object-fit: cover;
+            }
+        }
+        .button-request{
+            width: 100%;
+            background: rgba($white, 0.15);
+            max-width: 180px;
+            margin-top: 10px;
+            padding: 10px;
+            color: $white;
+            border: 1px solid $white;
+        }
+    }
+    .image-text-small {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Private-Pics {
+            position: absolute;
+            z-index: 3;
+            width: 100%;
+            button.btn {
+                width: 100%;
+                height: 140px;
+                margin-top: 15px;
+            }
+        }
+        .filterImage{
+            width: 100%;
+            height: 140px;
+            -webkit-backdrop-filter: blur(75px);
+            backdrop-filter: blur(5px);
+            border-radius: 24px;
+            position: absolute;
+            margin-top: 15px;
+            z-index: 2;
+        }
+        img{
+            width: 100%;
+            height: 140px;
+            border-radius: 24px;
+            margin-top: 15px;
+        }
+        .text{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            color: $white;
+        }
+        .slideImage {
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                background: #000;
+                width: 100%;
+                height: 140px;
+                left: 0;
+                border-radius: 24px;
+                opacity: 0.75;
+                top: 15px;
+                bottom: 0;
+            }
+            img {
+                width: 100%;
+                height: 140px;
+                border-radius: 24px;
+                margin-top: 15px;
+                object-fit: cover;
+            }
+        }
+        .button-request{
+            width: 100%;
+            background: rgba($white, 0.15);
+            max-width: 180px;
+            margin-top: 10px;
+            padding: 10px;
+            color: $white;
+            border: 1px solid $white;
+        }
+    }  
+    .share-button{
+        width: 100%;
+        border-radius: 25px;
+        margin: 20px 0;
+        .share-profile{
+            border-radius: 25px;
+            margin: 15px 0;
+        }
+    }  
+}
+
+/* End */
+
+/*Theme 1 Carousel*/
+
+/*Theme 1 Carousel*/
+
+.img-slider2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 76px 0 0;
+      max-width: 404px;
+    }
+    .img-right {
+      width: 95px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+    .img-left {
+      width: 95px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+    a.carousel-control-prev {
+        opacity: 0;
+        width: 95px;
+        height: 125px;
+        position: absolute;
+        left: 23px;
+        z-index: 3;
+        top: 58%;
+    }
+    a.carousel-control-next {
+        position: absolute;
+        width: 95px;
+        height: 125px;
+        top: 59%;
+        right: 21px;
+        opacity: 0;
+        z-index: 3;
+    }
+    .carousel-indicators {
+      left: 0;
+      top: 552px;
+      width: 100%;
+      display: none;
+      height: 2px;
+      margin: 12px 0 0;
+      button {
+        width: 110px;
+        margin: 10px 10px 10px;
+        margin: 0 auto;
+        background: #eee;
+        border: none;
+      }
+      button.active {
+        background: linear-gradient(96.46deg, #e51615 4.63%, #fe425c 180.67%);
+      }
+    }
+    .side-arrows {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        max-width: 100%;
+        height: 15vh;
+        top: 56%;
+        .white-background2 {
+            width: 100px;
+            height: 125px;
+            background: rgba(249,249,249,0.5);
+            position: absolute;
+            z-index: 1;
+            border-radius: 14px;
+            backdrop-filter: blur(37px);
+            border: 1px solid #fff;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .white-background3 {
+            width: 100px;
+            height: 125px;
+            background: rgba(249, 249, 249, 0.5);
+            position: absolute;
+            z-index: 1;
+            border-radius: 14px;
+            -webkit-backdrop-filter: blur(37px);
+            backdrop-filter: blur(37px);
+            border: 1px solid #fff;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 72%;
+        }
+    }
+  }  
+
+/* End */
+
+/* Status */
+.status {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .progressDiv {
+        .progress {
+            height: 4px;
+            margin: 10px 0;
+            .progress-bar {
+                width: 100%;
+                background: $white;
+            }
+        }
+    }
+    .progressName{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .name{
+            color: $white;
+            font-weight: 700;
+        }  
+        .time{
+            p{
+                color: $white;
+                font-size: 14px;
+            }
+        }  
+    }
+    .heart{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        svg{
+            background: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+/* End */
+
+/* Share Profile */
+.shareProfile{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .button-private {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 3;
+        bottom: 50%;
+        left: -80px;
+    }
+}
+/* End */
+   
+
+@media screen and (max-width: 412px) {
+    .home{
+        .background-shield{
+            .text-head{
+                .carousell{
+                    img {
+                        max-width: 350px;
+                    }
+                } 
+            } 
+        } 
+    } 
+}

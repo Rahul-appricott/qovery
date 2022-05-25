@@ -1,0 +1,29 @@
+@import '../Sass-utils//mixin.scss';
+@import '../Sass-utils//color.scss';
+@import '../Base/typography.scss';
+
+.accordion{
+    margin: 20px 0;
+    .accordion-item{
+        border: none;
+        border-radius: 14px;
+        .accordion-header{
+            font-family: var(--font-primary);
+            color: $primaryColor !important;
+        }
+        .accordion-button{
+            background-color: $white;
+        }
+        .accordion-body{
+            h4{
+                font-family: 'Work Sans';
+            }
+            .cover-block{
+                .slick-slide{
+                    width: 163px !important;
+                    height: 100%;
+                }
+            }
+        }
+    }    
+}

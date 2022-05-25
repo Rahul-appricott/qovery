@@ -1,0 +1,118 @@
+.Info-User{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+    .bg-Section{
+        width: 100%;
+        height: 375px;
+        background: #25a5fa;
+        opacity: 0.05;
+        filter: blur(164px);
+        position: absolute;
+        z-index: -1;
+        transition: 0.3s;
+        content: '';       
+    }
+    .progress-b{
+        margin-top: 40px;
+        .progress {
+            height: 0.5rem;
+        }
+    }
+    .svg-i {
+        margin-top: 15px;
+    }
+    h4 {
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #3F4156;
+        text-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+        backdrop-filter: blur(20px);
+        display: flex;
+        margin-top: 15px;
+    }
+    p1 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #666666;
+    }
+    p {
+        margin-top: 19px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 13px;
+        text-transform: capitalize;
+        color: #666666;
+    }    
+    .form-component{
+        width: 100%;
+        background: #fff;
+        border-radius: 22px 22px 0 0;
+        padding: 5px;
+        margin: -13px 0px;
+        .checkout{
+            background: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            margin: 20px 0;            
+            backdrop-filter: blur(22.7168px);
+            border-radius: 10px;
+            border: 1px solid rgba(37, 165, 250, 0.15);               
+            label{
+                margin: 0px 10px 0px 0px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #666666;
+            }
+            input[type=checkbox]{
+                width: 23px;
+                height: 23px;
+                &:checked{
+                    border: none;
+                }  
+            }
+        } 
+        .click{
+            display: flex;
+        }               
+    }   
+} 
+.form-label {
+    margin-bottom: 0.5rem;
+    margin-left: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    text-shadow: 0px 8px 32px rgb(19 23 66 / 20%);
+}
+
+.ButtonSet2 {
+    background: #F78000;
+    box-shadow: 0px 33px 100px rgb(22 26 68 / 6%);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    line-height: 54px;
+    text-decoration: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+}

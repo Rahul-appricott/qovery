@@ -1,0 +1,165 @@
+@import '../Sass-utils/color.scss';
+
+.question-bank{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #F8F8F8 0%, #EEEEEE 100%);
+    height: 100vh;
+    overflow: auto;
+    .inner-section{
+        width: 100%;
+        .tabbing {
+            ul{
+                display: flex;
+                border-bottom: none;
+                width: 100%;
+                justify-content: center;
+                li{
+                    button {
+                        border: none;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $greyColor;
+                        padding: 8px 10px;
+                        &.active{
+                        color: $headingColor;
+                        background: none;     
+                        border-bottom: 2px solid $primaryColor;   
+                        }
+                    }
+                }
+            }
+            .form-component{
+                width: 100%;
+                background: #fff;
+                border-radius: 22px 22px 0 0;
+                padding: 5px 20px;
+                margin: -13px 0px;
+                .checkout{
+                    background: #fff;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-radius: 4px;
+                    margin: 20px 0;
+                    background: linear-gradient(115.09deg, #FBFBFB 4.35%, #F7F7F7 98.4%);
+                    backdrop-filter: blur(22.7168px);
+                    border-radius: 10px;
+                    border: 1px solid rgba(37, 165, 250, 0.15);
+                    &:focus-within{
+                        color: $white;
+                    }   
+                    label{
+                        color: #666;
+                        font-weight: 400;
+                        font-size: 16px;
+                        margin: 0px 10px 0px 0px;
+                    }
+                    input[type=checkbox]{
+                        width: 23px;
+                        height: 23px;
+                        &:checked{
+                            background-color: $primaryColor;
+                            border: none;
+                        }  
+                    }
+                }
+                .signin{
+                    background: rgba($primaryColor, 0.1);
+                    width: 100%;
+                    height: 54px;
+                    color: $primaryColor;
+                    border-radius: 4px;
+                    font-weight: 600;
+                }
+                .btn.signin{
+                    background: $secondaryColor;
+                    width: 100%;
+                    height: 54px;
+                    color: $white;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                }
+            }    
+        }
+        /* Question Screen*/
+        .question22{
+            width: 100%;
+            border: 1px solid rgba(37, 165, 250, 0.15);
+            background: #fff;
+            padding: 20px;
+            flex-direction: column;
+            border-radius: 14px;
+            margin-bottom: 10px;
+            .q1{
+                display: flex;
+                margin: 20px 0;
+                span{
+                    margin: 0px 10px;
+                    color: #25A5FA;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            .profilee{
+                max-width: 150px;
+                background: #E8E7E7;
+                padding: 20px 50px;
+                color: $greyColor;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .signin{
+                max-width: 150px;
+                background: rgba($primaryColor, 0.1);
+                padding: 20px 50px;
+                color: $primaryColor;
+            }
+        } 
+        .rwt__tablist{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .rwt__tab{
+                &.active{
+                    border-bottom: 2px solid $primaryColor;
+                    border-radius: 0px;
+                }
+            }    
+        }   
+    } 
+    
+    .signin{
+        background: rgba($primaryColor, 0.1);
+        width: 100%;
+        height: 54px;
+        color: $primaryColor;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    .btn.signin{
+        background: $secondaryColor;
+        width: 100%;
+        height: 54px;
+        color: $white;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+}
